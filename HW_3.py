@@ -9,12 +9,13 @@
 x = int(input('Введите координату X точки А не равную 0 : '))
 y = int(input('Введите координату Y точки А не равную 0 : '))
 
-
-if x > 0 and y > 0:
+if x == 0 or y == 0:
+    print('X или Y не должны бфть равны 0 !!!')
+elif x > 0 and y > 0:
     print('1 четверть')
-if x < 0 and y > 0:
+elif x < 0 and y > 0:
     print('2 четверть')
-if x < 0 and y < 0:
+elif x < 0 and y < 0:
     print('3 четверть')
-if x > 0 and y < 0:
+else:
     print('4 четверть')
